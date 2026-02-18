@@ -1,0 +1,73 @@
+* {
+    font-family: FiraCode Nerd Font, sans-serif;
+    font-size: 16px;
+    border: none;
+    color: #cad3f5;
+}
+
+window#waybar {
+    background: transparent;
+    
+    /* debug */
+    /* border: 2px solid white; */
+}
+
+window#waybar.empty #window {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background-color: transparent;
+}
+
+#workspaces, #window, #clock, #language, #tray, #cpu, #memory, #custom-nix {
+    border-radius: 23px;
+    padding: 5px;
+    background-color: rgba(36, 39, 58, 1);
+    border: 2px solid rgba(100, 114, 125, 0.5);
+}
+
+#tray {
+    min-width: 34px;
+}
+
+/* #custom-nix {
+    font-size: 26px;
+    min-width: 34px;
+    color: #5277C3;
+} */
+
+#custom-nix {
+  padding-left: 23px;
+  padding-right: 23px;
+  background-image: url("file:///home/vw222/.config/nix.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+
+#clock, #memory, #cpu, #tray, #language {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+#workspaces .taskbar-window.active {
+    background-color: #494d64;
+}
+
+#workspaces .taskbar-window {
+    border-radius: 50%;
+}
+
+#window {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.modules-left {
+    margin-left: 10px;
+}
+
+.modules-right {
+    margin-right: 10px;
+    background: transparent;
+}
